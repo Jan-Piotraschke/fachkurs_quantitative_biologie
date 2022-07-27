@@ -28,6 +28,7 @@ y_axis = 0..1.5
 stplt = streamplot!(ax, odeSol, x_axis, y_axis, gridsize= (32,32), arrow_size = 5, linewidth = 0.5)
 @info "the equation system is solved"
 
+
 fig[1, 1] = ax
 save("lotka_volterra.png", fig, px_per_unit = 2)
 
